@@ -3,7 +3,7 @@ export const bestSellers = [
   {
     id: 'bs1',
     name: 'Bague Solitaire Or',
-    price: 899.99,
+    price: 29.99,
     image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=80',
     imageHover: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=80&bg=white',
     category: 'Bagues',
@@ -11,7 +11,7 @@ export const bestSellers = [
   {
     id: 'bs2',
     name: 'Boucles Diamant',
-    price: 599.99,
+    price: 29.99,
     image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=80',
     imageHover: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=80&blend=FFFFFF&blend-mode=normal',
     category: 'Boucles d\'oreilles',
@@ -19,7 +19,7 @@ export const bestSellers = [
   {
     id: 'bs3',
     name: 'Bracelet Tennis',
-    price: 449.99,
+    price: 28.99,
     image: 'https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=500&q=80',
     imageHover: 'https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=500&q=80&blend=FFFFFF&blend-mode=normal',
     category: 'Bracelets',
@@ -27,7 +27,7 @@ export const bestSellers = [
   {
     id: 'bs4',
     name: 'Créoles Or',
-    price: 329.99,
+    price: 22.99,
     image: 'https://images.unsplash.com/photo-1630019852942-f89202989a59?w=500&q=80',
     imageHover: 'https://images.unsplash.com/photo-1630019852942-f89202989a59?w=500&q=80&blend=FFFFFF&blend-mode=normal',
     category: 'Boucles d\'oreilles',
