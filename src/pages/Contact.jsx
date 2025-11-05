@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Clock, MessageSquare, Send } from 'lucide-react';
+import { Mail, Phone, MessageSquare, Send } from 'lucide-react';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -82,9 +82,9 @@ const Contact = () => {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Téléphone</h3>
-                  <a href="tel:+11234567890" className="text-gray-600 hover:text-gray-900 transition-colors">
-                    +1 (123) 456-7890
+                  <h3 className="font-semibold text-gray-900 mb-1">Téléphone / SMS</h3>
+                  <a href="tel:+15816884483" className="text-gray-600 hover:text-gray-900 transition-colors">
+                    +1 (581) 688-4483
                   </a>
                 </div>
               </div>
@@ -97,41 +97,13 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">WhatsApp</h3>
                   <a
-                    href="https://wa.me/11234567890"
+                    href="https://wa.me/15816884483"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     Discuter sur WhatsApp
                   </a>
-                </div>
-              </div>
-
-              {/* Address */}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Adresse</h3>
-                  <p className="text-gray-600">
-                    123 Rue de l'Élégance<br />
-                    75001 Paris, France
-                  </p>
-                </div>
-              </div>
-
-              {/* Hours */}
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-gray-900 text-white rounded-full flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Horaires d'Ouverture</h3>
-                  <p className="text-gray-600">
-                    Lundi - Samedi: 9h00 - 18h00<br />
-                    Dimanche: Fermé
-                  </p>
                 </div>
               </div>
             </div>

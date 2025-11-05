@@ -91,7 +91,7 @@ const FAQ = () => {
       questions: [
         {
           question: 'Comment puis-je vous contacter ?',
-          answer: 'Vous pouvez nous joindre via WhatsApp, SMS, email (contact@missbijoux.com) ou par téléphone au +1 (123) 456-7890. Notre équipe est disponible du lundi au samedi de 9h à 18h.'
+          answer: 'Vous pouvez nous joindre via WhatsApp, SMS, email (contact@missbijoux.com) ou par téléphone au +1 (581) 688-4483. Notre équipe est disponible pour répondre à vos questions.'
         },
         {
           question: 'Proposez-vous un service de personnalisation ?',
@@ -209,7 +209,7 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/11234567890"
+                href="https://wa.me/15816884483"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-white text-gray-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors"

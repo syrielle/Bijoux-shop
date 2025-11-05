@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
+import ScrollToTop from './components/ScrollToTop';
 import HeaderNew from './components/layout/HeaderNew';
 import FooterNew from './components/layout/FooterNew';
 import Home from './pages/Home';
@@ -19,6 +20,7 @@ function App() {
   return (
     <CartProvider>
       <Router>
+        <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-[#f5f3f0]">
           <HeaderNew />
           <main className="flex-grow">

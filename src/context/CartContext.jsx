@@ -91,21 +91,21 @@ export const CartProvider = ({ children }) => {
   const generateOrderMessage = () => {
     const cartId = generateCartId();
     let message = `*NOUVELLE COMMANDE DE BIJOUX*\n\n`;
-    message += `📋 *Détails de la commande :*\n`;
+    message += `*Details de la commande :*\n`;
     message += `${'='.repeat(35)}\n\n`;
 
     cartItems.forEach((item, index) => {
       message += `*${index + 1}. ${item.name}*\n`;
-      message += `   • Quantité : ${item.quantity}\n`;
-      message += `   • Prix unitaire : ${item.price.toFixed(2)} $\n`;
-      message += `   • Sous-total : *${(item.price * item.quantity).toFixed(2)} $*\n\n`;
+      message += `   - Quantite : ${item.quantity}\n`;
+      message += `   - Prix unitaire : ${item.price.toFixed(2)} $\n`;
+      message += `   - Sous-total : *${(item.price * item.quantity).toFixed(2)} $*\n\n`;
     });
 
     message += `${'='.repeat(35)}\n`;
-    message += `💰 *TOTAL : ${getCartTotal().toFixed(2)} $*\n\n`;
-    message += `🔖 ID Commande : _${cartId}_\n\n`;
-    message += `Je souhaite finaliser cette commande.\nPouvez-vous me confirmer la disponibilité et les modalités de paiement/livraison ?\n\n`;
-    message += `Merci ! 😊`;
+    message += `*TOTAL : ${getCartTotal().toFixed(2)} $*\n\n`;
+    message += `ID Commande : _${cartId}_\n\n`;
+    message += `Je souhaite finaliser cette commande.\nPouvez-vous me confirmer la disponibilite et les modalites de paiement/livraison ?\n\n`;
+    message += `Merci !`;
 
     return encodeURIComponent(message);
   };

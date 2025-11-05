@@ -154,8 +154,7 @@ const TermsOfSale = () => {
             <p className="text-gray-700 mt-4">
               <strong>Miss Bijoux</strong><br />
               Email : contact@missbijoux.com<br />
-              Téléphone : +1 (123) 456-7890<br />
-              Adresse : 123 Rue de l'Élégance, 75001 Paris, France
+              Téléphone : +1 (581) 688-4483
             </p>
           </div>
 

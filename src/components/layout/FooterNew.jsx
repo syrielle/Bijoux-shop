@@ -125,7 +125,7 @@ const FooterNew = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4" />
-                <span>+1 (123) 456-7890</span>
+                <span>+1 (581) 688-4483</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="w-4 h-4" />

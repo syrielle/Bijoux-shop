@@ -28,12 +28,10 @@ const LegalNotice = () => {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Éditeur du Site</h2>
             <p className="text-gray-700 leading-relaxed">
-              <strong>Raison sociale :</strong> Miss Bijoux SARL<br />
-              <strong>Siège social :</strong> 123 Rue de l'Élégance, 75001 Paris, France<br />
+              <strong>Raison sociale :</strong> Miss Bijoux<br />
               <strong>Email :</strong> contact@missbijoux.com<br />
-              <strong>Téléphone :</strong> +1 (123) 456-7890<br />
-              <strong>SIRET :</strong> XXX XXX XXX XXXXX<br />
-              <strong>Capital social :</strong> 10 000 €
+              <strong>Téléphone :</strong> +1 (581) 688-4483<br />
+              <strong>SIRET :</strong> XXX XXX XXX XXXXX
             </p>
           </div>
 

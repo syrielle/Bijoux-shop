@@ -22,8 +22,8 @@ const Cart = () => {
     generateOrderMessage,
   } = useCart();
 
-  // Numéro WhatsApp (à remplacer par votre numéro)
-  const WHATSAPP_NUMBER = '15141234567'; // Format: code pays + numéro (sans +, espaces ou tirets)
+  // Numéro WhatsApp
+  const WHATSAPP_NUMBER = '15816884483'; // Format: code pays + numéro (sans +, espaces ou tirets)
 
   const handleWhatsAppOrder = () => {
     const message = generateOrderMessage();

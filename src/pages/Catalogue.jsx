@@ -8,6 +8,7 @@ import { products } from '../data/products';
 const Catalogue = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'all');
+  const [selectedPriceRange, setSelectedPriceRange] = useState('all');
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const categories = [
@@ -17,6 +18,13 @@ const Catalogue = () => {
     { id: 'boucles', name: "Boucles d'Oreilles", count: products.filter(p => p.category === 'boucles').length },
     { id: 'bracelets', name: 'Bracelets', count: products.filter(p => p.category === 'bracelets').length },
     { id: 'bagues', name: 'Bagues', count: products.filter(p => p.category === 'bagues').length },
+  ];
+
+  const priceRanges = [
+    { id: 'all', name: 'Tous les prix', min: 0, max: Infinity },
+    { id: '0-10', name: 'Moins de 10$', min: 0, max: 10 },
+    { id: '10-20', name: '10$ - 20$', min: 10, max: 20 },
+    { id: '20-30', name: '20$ - 30$', min: 20, max: 30 },
   ];
 
   // Update selected category when URL param changes
@@ -39,9 +47,17 @@ const Catalogue = () => {
     setIsFilterOpen(false);
   };
 
-  const filteredProducts = selectedCategory === 'all'
-    ? products
-    : products.filter(product => product.category === selectedCategory);
+  // Filtrer par catégorie et par prix
+  const filteredProducts = products.filter(product => {
+    // Filtre par catégorie
+    const categoryMatch = selectedCategory === 'all' || product.category === selectedCategory;
+
+    // Filtre par prix
+    const priceRange = priceRanges.find(r => r.id === selectedPriceRange);
+    const priceMatch = !priceRange || (product.price >= priceRange.min && product.price <= priceRange.max);
+
+    return categoryMatch && priceMatch;
+  });
 
   return (
     <div className="min-h-screen bg-[#f5f3f0]">
@@ -97,6 +113,26 @@ const Catalogue = () => {
                 </nav>
               </div>
 
+              {/* Filtre par Prix */}
+              <div className="bg-white rounded-lg shadow-md p-6 mt-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-6">Prix</h2>
+                <nav className="space-y-2">
+                  {priceRanges.map((range) => (
+                    <button
+                      key={range.id}
+                      onClick={() => setSelectedPriceRange(range.id)}
+                      className={`w-full text-left px-4 py-3 rounded-lg transition-all ${
+                        selectedPriceRange === range.id
+                          ? 'bg-amber-600 text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      <span className="font-medium">{range.name}</span>
+                    </button>
+                  ))}
+                </nav>
+              </div>
+
               {/* Info Box */}
               <div className="bg-gradient-to-br from-gray-900 to-gray-700 rounded-lg shadow-md p-6 mt-6 text-white">
                 <h3 className="text-lg font-bold mb-3">Besoin d'Aide ?</h3>
@@ -104,7 +140,7 @@ const Catalogue = () => {
                   Notre équipe est disponible pour vous conseiller dans votre choix.
                 </p>
                 <a
-                  href="https://wa.me/11234567890"
+                  href="https://wa.me/15816884483"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full text-center bg-white text-gray-900 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

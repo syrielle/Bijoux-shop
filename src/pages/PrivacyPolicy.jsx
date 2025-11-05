@@ -145,8 +145,7 @@ const PrivacyPolicy = () => {
             </p>
             <p className="text-gray-700 mt-4">
               <strong>Email :</strong> contact@missbijoux.com<br />
-              <strong>Téléphone :</strong> +1 (123) 456-7890<br />
-              <strong>Adresse :</strong> 123 Rue de l'Élégance, 75001 Paris, France
+              <strong>Téléphone :</strong> +1 (581) 688-4483
             </p>
           </div>
 
